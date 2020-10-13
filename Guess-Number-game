@@ -1,0 +1,15 @@
+#Guess the number game
+
+import random
+ 
+Range = random.randrange(1, 25)
+print(Range)
+ 
+guess = int(input("Please enter your guess: "))
+ 
+if guess == Range:
+    print("Your guess is perferct!, Conguratulation")
+elif guess < Range:
+    print("Your guess is too low")
+else:
+    print("Your guess is too high")
